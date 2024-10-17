@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f6af54ef013a9b364aa3c755874fe174"
+name = "shpify_dummy"
+handle = "shpify_dummy"
+application_url = "https://scientists-reload-hit-clearance.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "shop-test9399.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_orders,read_products,write_customers,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://scientists-reload-hit-clearance.trycloudflare.com/auth/callback",
+  "https://scientists-reload-hit-clearance.trycloudflare.com/auth/shopify/callback",
+  "https://scientists-reload-hit-clearance.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
